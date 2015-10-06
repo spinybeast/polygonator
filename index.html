@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -18,9 +19,9 @@
     <![endif]-->
 </head>
 <body>
-<div class="no-padding col-md-12">
+<div class="no-padding col-md-12" id="fullPage">
 <div class="container">
-    <div class="col-md-12">
+    <div class="col-md-12 section">
             <div class="logo">
                 <div class="col-sm-11">
                     <img src="img/logo.png" alt="Polygonator" class="img-responsive">
@@ -40,7 +41,7 @@
             </div>
         </div>
         <div class="col-md-12 blue back"></div>
-        <div class="col-md-12">
+        <div class="col-md-12 section">
                 <div class="col-md-12">
                     <div class="col-md-6 no-padding">
                         <img src="img/3d.png" alt="" class="img-responsive">
@@ -69,18 +70,18 @@
                         </div>
                     </div>
                     <div class="col-md-6 no-padding">
-                        <div class="polygonator"></div>
-                        <div>
+                        <div class="polygonator img-responsive"><div>
                             We provide wide range of 3D modeling visualisation and information services
-                        </div>
+                        </div></div>
+
                     </div>
                 </div>
         </div>
         <div class="orange back col-md-12"></div>
-        <div class="col-md-12">
+        <div class="col-md-12 section">
                 Our team
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 section">
                 contact us
         </div>
 </div>
@@ -88,10 +89,14 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.easings.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
     $(function () {
+        $('#fullpage').fullpage({sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],});
         $('.carousel').owlCarousel({
             loop: true,
             items: 1,
