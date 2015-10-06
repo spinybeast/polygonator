@@ -20,13 +20,15 @@ body {
     margin-top: -20px
 }
 
-.no-padding {
+.no-padding, .col-md-12 {
     padding: 0 !important;
 }
 
 .container {
     background: #fff;
     padding: 0;
+    max-width: 1440px;
+    width: auto;
 }
 
 .logo {
