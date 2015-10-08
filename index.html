@@ -21,8 +21,8 @@
 <body>
 <div class="no-padding col-md-12" id="fullPage">
     <div class="container">
-        <div class="col-md-12 section">
-            <div class="logo">
+        <div class="col-md-12 section" id="top">
+            <div class="logo absolute-center-horizontal">
                 <div class="col-sm-11">
                     <img src="img/logo.png" alt="Polygonator" class="img-responsive">
                 </div>
@@ -39,7 +39,9 @@
                 </div>
                 <div><img src="img/carousel.jpg" alt=""></div>
             </div>
-            <div class="col-md-12 blue back"></div>
+            <div class="col-md-12 blue back">
+                <img src="img/back/blue.png" alt="" class="img-responsive"/>
+            </div>
         </div>
 
         <div class="col-md-12 section">
@@ -62,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 display-table">
                 <div class="col-md-6 no-padding">
                     <img src="img/animation.png" alt="" class="img-responsive">
 
@@ -72,24 +74,31 @@
                     </div>
                 </div>
                 <div class="col-md-6 no-padding polygonator">
-                    <img src="img/logo.png" alt="Polygonator" class="img-responsive">
+                    <img src="img/logo.png" alt="Polygonator" class="img-responsive absolute-center-horizontal">
 
-                    <div class="caption right">
+                    <div class="caption right transparent">
                         We provide wide range of 3D modeling visualisation and information services
                     </div>
                 </div>
             </div>
-            <div class="orange back col-md-12"></div>
+            <div class="orange back col-md-12">
+                <img src="img/back/orange.png" alt="" class="img-responsive"/>
+            </div>
         </div>
         <div class="col-md-12 section polygon">
-            <div class="col-md-offset-6 col-md-6" style="height: 100%">
+            <div class="col-md-7 polygon-img">
+                <img src="img/back/polygon_back.png" alt="Polygonator" class="img-responsive">
+            </div>
+            <div class="col-md-5 polygon-text">
                 <img src="img/logo_dark.png" alt="Polygonator" class="img-responsive">
 
                 <div class="caption right">
                     We provide wide range of 3D modeling <br/>visualisation and information services
                 </div>
             </div>
-            <div class="green back col-md-12"></div>
+            <div class="green back col-md-12">
+                <img src="img/back/green.png" alt="" class="img-responsive"/>
+            </div>
         </div>
         <div class="col-md-12 section team">
             <img src="img/team.png" alt="Our Team" class="img-responsive">
@@ -98,14 +107,17 @@
                 What can I say, we're 3D modeling geeks.
                 We love to create all kinda 3D shapes.
             </div>
-            <div class="blue back col-md-12"></div>
+            <div class="blue back col-md-12">
+                <img src="img/back/blue.png" alt="" class="img-responsive"/>
+            </div>
         </div>
         <div class="col-md-12 section contact">
             <div class="col-md-4 no-padding">
                 <div class="dark-caption">
-                <h1>Contact Us</h1>
+                    <h1>Contact Us</h1>
+
                     <div>
-                        We love getting messages.
+                        We love getting messages. <br/>
                         Fields with * are required.
                     </div>
                 </div>
@@ -132,8 +144,9 @@
             </div>
             <div class="col-md-4 col-md-offset-4 no-padding">
                 <div class="pull-right">
-                    <img src="img/logo_darker.png" alt="Polygonator" class="img-responsive">
-
+                    <div class="logo-darker">
+                        <img src="img/logo_darker.png" alt="Polygonator" class="img-responsive">
+                    </div>
                     <div class="text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                         Aenean
@@ -154,9 +167,11 @@
                 </div>
             </div>
 
-        </div>
+
         <div class="footer col-xs-12">
-            <div class="up"><div class="arrow"></div></div>
+            <div class="up">
+                <div class="arrow"></div>
+            </div>
             <div class="social col-md-offset-4 col-md-4 col-xs-7 text-center no-padding">
                 <div class="facebook"></div>
                 <div class="twitter"></div>
@@ -177,10 +192,12 @@
             </div>
         </div>
         <div class="copy col-xs-12">
-            <div class="col-md-offset-4 col-md-4 col-xs-8 text-center">&copy; Polygonator 2015 - All rights reserved</div>
+            <div class="col-md-offset-4 col-md-4 col-xs-8 text-center">&copy; Polygonator 2015 - All rights reserved
+            </div>
             <div class="col-xs-4 text-right">
                 <a href="/">Terms & Conditions</a>
             </div>
+        </div>
         </div>
     </div>
 </div>
@@ -200,9 +217,11 @@
             dots: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: true,
         });
-//        $('#fullPage').fullpage({});
+        $('#fullPage').fullpage({});
+        $('.up').click(function() {
+            $.fn.fullpage.moveTo(1);
+        });
     });
 </script>
 </body>
