@@ -12,7 +12,7 @@
 
 body {
     color: #fff !important;
-    font-family: "helveticaneuecyrlight", Helvetica, Arial, sans-serif !important;
+    font-family:Arial, "helveticaneuecyrlight", Helvetica,  sans-serif !important;
     font-size: 12pt !important;
     background: #565d67;
 }
@@ -28,7 +28,8 @@ body {
 }
 
 .no-padding, .col-md-12 {
-    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .container {
@@ -60,7 +61,7 @@ body {
     background: url(../img/menu_hover.png);
 }
 
-.carousel .caption {
+.carousel .caption, .team .caption {
     max-width: 30%
 }
 
@@ -134,21 +135,17 @@ body {
 
 .contact {
     background: #565d67;
+    padding: 70px 0 150px;
 }
 
 .footer {
     background: #373c43;
     color: #797e86;
-    bottom: 35px;
-    position: absolute;
 }
 
 .copy {
     background: #2a2e34;
     color: #797e86 !important;
-    bottom: 0;
-    position: absolute;
-    height: 35px;
     padding-top: 10px !important;
 }
 
@@ -186,4 +183,104 @@ textarea {
     top: 143px;
     right: -36px;
     background: url(../img/back/name.png);
+}
+
+.social {
+    padding-top: 33px !important;
+}
+
+.social div {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../img/Social_all.png);
+    cursor: pointer;
+}
+
+.social .facebook {
+    background-position: 0 32px;
+}.
+social .facebook:hover {
+    background-position: 0 0 !important;
+}
+.social .twitter {
+    background-position: -32px 32px;
+}.
+social .twitter:hover {
+    background-position: -32px 0!important;
+}
+.social .google {
+    background-position: -96px 32px;
+}.
+social .google:hover {
+    background-position: -96px 0!important;
+}
+.social .vk {
+    background-position: 32px 32px;
+}.
+social .vk:hover {
+    background-position: 32px 0!important;
+}
+.social .instagram {
+    background-position: -128px 32px;
+}.
+social .instagram:hover {
+    background-position: -128px 0!important;
+}
+.social .pinterest {
+    background-position: -160px 32px;
+}.
+social .pinterest:hover {
+    background-position: -160px 0!important;
+}
+.social .youtube {
+    background-position: -64px 32px;
+}.
+social .youtube:hover {
+    background-position: -64px 0!important;
+}
+.social .vimeo {
+    background-position: -192px 32px;
+}.
+social .vimeo:hover {
+    background-position: -192px 0!important;
+}
+.social .skype {
+    background-position: -224px 32px;
+    margin-right: 0;
+}.
+social .skype:hover {
+    background-position: -224px 0!important;
+}
+
+ .up {
+     width: 75px;
+     height: 75px;
+     position: absolute;
+     top: -75px;
+     right: 50px;
+     background: #373c43;
+     cursor: pointer;
+ }
+ .up .arrow {
+     position: absolute;
+     top: 8px;
+     left: 17px;
+     border: 20px solid transparent;
+     border-bottom: 20px solid #565D67;
+
+ }
+.up:hover .arrow {
+     border-bottom-color: #9d9fa5;
+ }
+
+.up::before {
+    content: ' ';
+    position: absolute;
+    height: 95px;
+    width: 55px;
+    background: url(../img/back/up.png);
+    top: -35px;
+    left: -27px;
 }
