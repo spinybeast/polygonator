@@ -66,6 +66,7 @@ body {
 }
 
 .menu {
+    display: block;
     background: url(../img/menu.png);
     width: 34px;
     height: 30px;
