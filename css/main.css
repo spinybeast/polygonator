@@ -127,18 +127,20 @@ body {
     width: 100%;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    -webkit-box-shadow: inset 0px 10px 117px 10px rgba(0,0,0,0.52);
-    -moz-box-shadow: inset 0px 10px 117px 10px rgba(0,0,0,0.52);
-    box-shadow: inset 0px 10px 117px 10px rgba(0,0,0,0.52);
+    -webkit-box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
+    box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
 }
 
 .polygonator {
     background: #565d67;
     height: 100%;
 }
+
 .polygonator img {
     top: 35px;
 }
+
 .polygon {
     background: #fff;
 }
@@ -149,6 +151,10 @@ body {
 
 .polygon-text {
     margin-right: -35px;
+}
+
+.polygon-text img {
+    margin-top: 70px;
 }
 
 .contact {
@@ -208,7 +214,27 @@ textarea {
     content: " ";
     top: 165px;
     right: -36px;
-    background: url(../img/back/name.png);
+    background: url(../img/back/name.png) 0 0 no-repeat;
+}
+
+.features .caption.left::before {
+    width: 367px;
+    height: 103px;
+    position: absolute;
+    content: " ";
+    top: -35px;
+    right: -36px;
+    background: url(../img/back/caption-left.png) 0 0 no-repeat;
+}
+
+.features .caption.right::before {
+    width: 367px;
+    height: 103px;
+    position: absolute;
+    content: " ";
+    bottom: -35px;
+    left: -36px;
+    background: url(../img/back/caption-right.png) 0 0 no-repeat;
 }
 
 .social {
@@ -338,6 +364,7 @@ textarea {
     top: -36px;
     left: 149px;
 }
+
 .logo-darker::before {
     content: ' ';
     position: absolute;
@@ -351,8 +378,16 @@ textarea {
 .transparent {
     background: transparent;
 }
-.display-table {display: table}
+
+.transparent::before {
+    background: none !important;
+}
+
+.display-table {
+    display: table
+}
+
 .display-table > [class*="col-"] {
-    float:none;
-    display:table-cell;
+    float: none;
+    display: table-cell;
 }
