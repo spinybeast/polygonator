@@ -49,10 +49,10 @@ body {
 }
 
 .container {
-    background: #fff;
     padding: 0;
     max-width: 1440px;
     width: auto;
+    position: relative;
 }
 
 .logo {
@@ -123,10 +123,11 @@ body {
 }
 
 .back {
+    background: #fff;
     clear: both;
     width: 100%;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     -webkit-box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
     box-shadow: inset 0px 10px 117px 10px rgba(0, 0, 0, 0.52);
@@ -141,7 +142,7 @@ body {
     top: 35px;
 }
 
-.polygon {
+.polygon .container {
     background: #fff;
 }
 
@@ -187,7 +188,7 @@ body {
     background: #797e86 url(../img/back/input.png) right bottom no-repeat;
     outline: none;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 35px;
 }
 
 .form-group input:focus, .form-group textarea:focus {
@@ -328,7 +329,7 @@ textarea {
     height: 75px;
     position: absolute;
     top: -75px;
-    right: 50px;
+    right: 15px;
     background: #373c43;
     cursor: pointer;
 }
@@ -365,14 +366,14 @@ textarea {
     left: 149px;
 }
 
-.logo-darker::before {
+.logo-darker .pull-right::before {
     content: ' ';
     position: absolute;
     height: 55px;
     width: 95px;
     background: url(../img/back/polygonator.png);
     top: 31px;
-    left: -35px;
+    left: 21px;
 }
 
 .transparent {
@@ -391,3 +392,16 @@ textarea {
     float: none;
     display: table-cell;
 }
+
+.text {
+    line-height: 2;
+    text-align: right;
+    padding-top: 75px;
+    padding-right: 0;
+    color: #797e86;
+}
+
+p.text-right {
+    font-size: 14px;
+}
+.contact-info {padding-top: 10px;}
