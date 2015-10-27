@@ -173,7 +173,11 @@ body {
 
 .contact {
     background: #565d67;
-    height: 100%;
+    padding-top: 100px;
+}
+
+.contact .container.first {
+    margin-top: 0px;
 }
 
 .footer {
@@ -422,7 +426,10 @@ p.text-right {
     padding-top: 10px;
 }
 
-.margin {margin-bottom: -15%;}
+.margin {
+    margin-bottom: -15%;
+}
+
 @media only screen and (max-width: 768px) {
     .is_mobile {
         display: none;
@@ -449,18 +456,23 @@ p.text-right {
     .carousel .caption, .team .caption {
         max-width: 70%;
     }
+
     .logo-darker .pull-right {
         margin: 40px auto;
     }
+
     .logo-darker .pull-right::before {
         top: 71px;
         left: -6px;
     }
 
-    .contact .container {margin-top: 70px;}
+    .contact .container {
+        margin-top: 70px;
+    }
 }
+
 @media (min-width: 992px) {
     .polygon-img {
-         margin: 0;
+        margin: 0;
     }
 }
