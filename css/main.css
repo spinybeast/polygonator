@@ -61,7 +61,7 @@ body {
     top: 0;
     z-index: 100;
     background: rgba(129, 130, 129, 0.71);
-    padding: 28px 37px;
+    padding: 28px 0 37px 28px;
     margin-left: -230px
 }
 
@@ -71,7 +71,7 @@ body {
     width: 34px;
     height: 30px;
     cursor: pointer;
-    margin-top: 28px;
+    margin-top: 25px;
 }
 
 .menu:hover {
@@ -155,7 +155,7 @@ body {
     top: 35px;
 }
 
-.polygon .container {
+.polygon {
     background: #fff;
 }
 
@@ -469,6 +469,9 @@ p.text-right {
     .contact .container {
         margin-top: 70px;
     }
+    .up {
+         top: -145px;
+     }
 }
 
 @media (min-width: 992px) {
