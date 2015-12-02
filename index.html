@@ -221,13 +221,19 @@
         if (!is_mobile) {
             $('#fullPage').fullpage({
                 onLeave: function (index, nextIndex, direction) {
-                    var leavingSection = $(this);
-                    if (index == 5 && direction == 'down') {
-                        leavingSection.find('.container').addClass('margin');
+                    var slide = $(this);
+                    if (direction == 'down') {
+                        slide.find('.back').show();
+                        setTimeout(function () {
+                            slide.find('.back').slideUp()
+                        }, 300);
+                    } else {
+                        slide.find('.back').prev().show();
+                        setTimeout(function () {
+                            slide.find('.back').prev().slideDown()
+                        }, 300);
                     }
-                    if (index == 6 && direction == 'up') {
-                        $('.container.margin').removeClass('margin');
-                    }
+
                 }
             });
             $('.up').click(function () {
