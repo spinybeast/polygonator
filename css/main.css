@@ -430,7 +430,28 @@ p.text-right {
 .margin {
     margin-bottom: -15%;
 }
+.img-full {
+    display:block;
+    width:100%;
+    height: 100% !important;
+}
+.full-slide {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+}
+.half-slide {
+    width: 50%;
+    height: 50%;
+    min-height: 50%;
+    display: block;
+}
 
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
 @media only screen and (max-width: 768px) {
     .is_mobile {
         display: none;
@@ -473,6 +494,16 @@ p.text-right {
     .up {
          top: -145px;
      }
+    .img-full {
+       height: auto;
+    }
+    .full-slide {
+        height: auto;
+    }
+
+    .fill {
+        height: auto;
+    }
 }
 
 @media (min-width: 992px) {

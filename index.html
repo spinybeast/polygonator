@@ -35,38 +35,39 @@
             </div>
 
         </div>
-        <div class="carousel col-md-12 no-padding">
-            <div><img src="img/carousel.jpg" alt="">
+        <div class="container-fluid no-padding fill carousel">
+            <div class="full-slide no-padding">
+                <img src="img/carousel.jpg" alt="" class="img-full">
 
                 <div class="caption">
                     We provide wide range of 3D modeling visualisation and information services
                 </div>
             </div>
-            <div><img src="img/carousel.jpg" alt=""></div>
+            <div class="full-slide no-padding">
+                <img src="img/carousel.jpg" alt="" class="img-full">
+            </div>
         </div>
         <div class="col-md-12 blue back hidden-xs"></div>
     </div>
     <div class="col-md-12 section features">
-        <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 no-padding">
-                <img src="img/3d.png" alt="" class="img-responsive col-md-12">
+        <div class="container-fluid no-padding fill">
+            <div class="half-slide no-padding">
+                <img src="img/3d.png" alt="" class="img-full col-md-12">
 
                 <div class="caption left"><h1>3D Modeling</h1>
                     What can I say, we're 3D modeling geeks.
                     We love to create all kinda 3D shapes.
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 no-padding">
-                <img src="img/visualization.png" alt="" class="img-responsive col-md-12">
+            <div class="half-slide no-padding">
+                <img src="img/visualization.png" alt="" class="img-full col-md-12">
 
                 <div class="caption top"><h1>Visualisation</h1>
                     What can I say, we're 3D modeling geeks.
                     We love to create all kinda 3D shapes.
                 </div>
             </div>
-        </div>
-        <div class="col-md-12 display-table">
-            <div class="col-md-6 col-sm-6 no-padding">
+            <div class="half-slide no-padding">
                 <img src="img/animation.png" alt="" class="img-responsive col-md-12">
 
                 <div class="caption right"><h1>Animation</h1>
@@ -74,7 +75,7 @@
                     We love to create all kinda 3D shapes.
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 no-padding polygonator">
+            <div class="half-slide no-padding polygonator">
                 <img src="img/logo.png" alt="Polygonator" class="img-responsive absolute-center-horizontal">
 
                 <div class="caption right transparent text-right">
@@ -99,7 +100,7 @@
         <div class="green back col-md-12 hidden-xs"></div>
     </div>
     <div class="col-md-12 section team">
-        <img src="img/team.png" alt="Our Team" class="img-responsive col-md-12">
+        <img src="img/team.png" alt="Our Team" class="img-full col-md-12">
 
         <div class="caption left"><h1>Our team</h1>
             What can I say, we're 3D modeling geeks.
@@ -215,8 +216,8 @@
             loop: true,
             items: 1,
             dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
+//            autoplay: true,
+//            autoplayTimeout: 3000,
         });
         if (!is_mobile) {
             $('#fullPage').fullpage({
