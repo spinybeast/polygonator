@@ -177,7 +177,7 @@ body {
     padding-top: 100px;
 }
 
-.contact .container.first {
+.contact .first {
     margin-top: 0px;
 }
 
@@ -347,7 +347,7 @@ textarea {
     height: 75px;
     position: absolute;
     top: -75px;
-    right: 15px;
+    right: 40px;
     background: #373c43;
     cursor: pointer;
 }
@@ -425,6 +425,7 @@ p.text-right {
 
 .contact-info {
     padding-top: 10px;
+    padding-right: 30px;
 }
 
 .margin {
