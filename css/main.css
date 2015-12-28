@@ -174,7 +174,7 @@ body {
 
 .contact {
     background: #565d67;
-    padding-top: 100px;
+    padding-top: 68px;
 }
 
 .contact .first {
@@ -232,7 +232,7 @@ textarea {
     position: absolute;
     content: " ";
     top: 165px;
-    right: -36px;
+    right: -21px;
     background: url(../img/back/name.png) 0 0 no-repeat;
 }
 
@@ -381,7 +381,7 @@ textarea {
     width: 367px;
     background: url(../img/back/contact.png);
     top: -36px;
-    left: 149px;
+    left: 134px;
 }
 
 .logo-darker .pull-right::before {
@@ -453,6 +453,29 @@ p.text-right {
     min-height: 100%;
     height: 100%;
 }
+
+.center-container {
+    height:100%;
+    display: table;
+    width:100%;
+    margin:0;
+}
+
+.center-row {
+    height:50%;
+    width:100%;
+    display: table-row;
+}
+
+.center-row > div {
+    height:100%;
+    width:50%;
+    display: table-cell;
+    border:0 solid #eee;
+    color:#fff;
+    vertical-align:middle;
+}
+
 @media only screen and (max-width: 768px) {
     .is_mobile {
         display: none;
@@ -493,7 +516,7 @@ p.text-right {
         margin-top: 70px;
     }
     .up {
-         top: -145px;
+         /*top: -145px;*/
      }
     .img-full {
        height: auto;
@@ -505,6 +528,8 @@ p.text-right {
     .fill {
         height: auto;
     }
+    #carousel {min-height: 300px;}
+    #carousel img{max-height: 100% !important;}
 }
 
 @media (min-width: 992px) {
