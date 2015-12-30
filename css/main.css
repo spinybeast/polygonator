@@ -80,10 +80,12 @@ body {
     border: none;
     margin-top: 0;
     width: 100%;
+    padding: 0;
 }
 .dropdown-menu>li>a {
-     padding: 10px 20px;
+     padding: 15px 20px;
      color: #fff;
+    transition: 0.3s;
  }
 .menu:hover {
     background: url(../img/menu_hover.png);
