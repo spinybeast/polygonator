@@ -28,13 +28,14 @@
                 <img src="img/logo.png" alt="Polygonator" class="img-responsive">
             </div>
             <div class="col-xs-1 no-padding">
-                <a class="menu dropdown-toggle" data-target="#" href="#" data-toggle="dropdown"></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                </ul>
+                <a class="menu" href="#"></a>
             </div>
-
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Another action</a></li>
+            </ul>
         </div>
         <div id="carousel" class="layerslider" style="width:100%;height: 100%">
             <div class="ls-slide" data-ls="slidedelay:3500;transition2d:11;">
@@ -223,7 +224,9 @@
             hoverPrevNext: false,
             skinsPath: 'js/layerslider/skins/'
         });
-
+        $('.menu').on('click', function(){
+            $('.dropdown-menu').slideToggle('slow');
+        });
         var is_mobile = false;
         if ($('.is_mobile').is(':hidden')) {
             is_mobile = true;
