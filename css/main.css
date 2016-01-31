@@ -131,7 +131,9 @@ body {
     margin-bottom: 60px;
     position: relative;
 }
-
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: rgba(129, 130, 129, 0.71);
+}
 .caption h1 {
     margin: 5px 0;
 }

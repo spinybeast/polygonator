@@ -31,11 +31,11 @@
                 <a class="menu" href="#"></a>
             </div>
             <ul class="dropdown-menu">
-                <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-                <li data-menuanchor="firstPage"><a href="#firstPage">Services</a></li>
-                <li data-menuanchor="firstPage"><a href="#firstPage">Works</a></li>
-                <li data-menuanchor="firstPage"><a href="#firstPage">Our Team</a></li>
-                <li data-menuanchor="firstPage"><a href="#firstPage">Contact Us</a></li>
+                <li data-menuanchor="home"><a href="#home">Home</a></li>
+                <li data-menuanchor="services"><a href="#services">Services</a></li>
+                <li data-menuanchor="works"><a href="#works">Works</a></li>
+                <li data-menuanchor="our-team"><a href="#our-team">Our Team</a></li>
+                <li data-menuanchor="contact-us"><a href="#contact-us">Contact Us</a></li>
             </ul>
         </div>
         <div id="carousel" class="layerslider" style="width:100%;height: 100%">
@@ -52,7 +52,7 @@
                 <img src="img/team.png" class="ls-bg" alt="Slide background"/>
             </div>
         </div>
-        <div class="col-md-12 blue back hidden-xs"></div>
+        <!--<div class="col-md-12 blue back hidden-xs"></div>-->
     </div>
     <div class="section features">
         <div class="center-container">
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="orange back col-md-12 hidden-xs"></div>
+        <!--<div class="orange back col-md-12 hidden-xs"></div>-->
     </div>
     <div class="col-md-12 section polygon">
         <div class="container">
@@ -104,19 +104,20 @@
                 We provide wide range of 3D modeling <br/>visualisation and information services
             </div>
         </div>
-        <div class="green back col-md-12 hidden-xs"></div>
+        <!--<div class="green back col-md-12 hidden-xs"></div>-->
     </div>
     <div class="col-md-12 section team layerslider" style="width:100%;height: 100%">
         <div class="ls-slide" data-ls="slidedelay:0;transition2d:11;">
             <img src="img/team.png" alt="Our Team" class="ls-bg">
 
             <p class="caption left">
-                <h1>Our team</h1>
-                What can I say, we're 3D modeling geeks.
-                We love to create all kinda 3D shapes.
+
+            <h1>Our team</h1>
+            What can I say, we're 3D modeling geeks.
+            We love to create all kinda 3D shapes.
             </p>
         </div>
-        <div class="blue back col-md-12 hidden-xs"></div>
+        <!--<div class="blue back col-md-12 hidden-xs"></div>-->
     </div>
     <div class="col-md-12 section contact">
         <div class="first">
@@ -125,7 +126,8 @@
                     <h1>Contact Us</h1>
 
                     <div>
-                        We love getting messages. We believe in being there for our customers and any questions or concerns they may have. So, please, drop us a line.
+                        We love getting messages. We believe in being there for our customers and any questions or
+                        concerns they may have. So, please, drop us a line.
                         <br/>
                         <br/>
                         Fields with * - required
@@ -232,7 +234,7 @@
             hoverPrevNext: false,
             skinsPath: 'js/layerslider/skins/'
         });
-        $('.menu').on('click', function(){
+        $('.menu').on('click', function () {
             $('.dropdown-menu').slideToggle('slow');
         });
         var is_mobile = false;
@@ -242,19 +244,22 @@
 
         if (!is_mobile) {
             $('#fullPage').fullpage({
+                anchors: ['home', 'services', 'works', 'our-team', 'contact-us'],
+                menu: '.dropdown-menu',
+
                 onLeave: function (index, nextIndex, direction) {
                     var slide = $(this);
-                    if (direction == 'down') {
-                        slide.find('.back').show();
-                        setTimeout(function () {
-                            slide.find('.back').slideUp()
-                        }, 300);
-                    } else {
-                        slide.find('.back').prev().show();
-                        setTimeout(function () {
-                            slide.find('.back').prev().slideDown()
-                        }, 300);
-                    }
+                    /*if (direction == 'down') {
+                     slide.find('.back').show();
+                     setTimeout(function () {
+                     slide.find('.back').slideUp()
+                     }, 300);
+                     } else {
+                     slide.find('.back').prev().show();
+                     setTimeout(function () {
+                     slide.find('.back').prev().slideDown()
+                     }, 300);
+                     }*/
 
                 }
             });
